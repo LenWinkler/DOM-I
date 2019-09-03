@@ -112,3 +112,15 @@ ps[2].textContent = siteContent["main-content"]["services-content"];
 ps[3].textContent = siteContent["main-content"]["product-content"];
 
 ps[4].textContent = siteContent["main-content"]["vision-content"];
+
+//----------------------CONTACT--------------------------------------
+
+ps[5].innerHTML = "123 Way 456 Street <br> Somewhere, USA";
+
+ps[6].textContent = siteContent["contact"]["phone"];
+
+ps[7].textContent = siteContent["contact"]["email"];
+
+//-----------------------FOOTER-------------------------------
+
+ps[8].textContent = siteContent["footer"]["copyright"];
