@@ -72,7 +72,6 @@ let ctaButton = document.querySelector("button");
 ctaButton.innerText = siteContent["cta"]["button"];
 
 let ctaImg = document.getElementById("cta-img");
-
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 //--------------------TOP CONTENT H4's-----------------------
@@ -95,8 +94,21 @@ headers[4].textContent = siteContent["main-content"]["vision-h4"];
 
 headers[5].textContent = siteContent["contact"]["contact-h4"];
 
-//-------------------TOP CONTENT P's--------------------------
+//-------------------TOP CONTENT P's & PIC--------------------------
 
 let ps = document.querySelectorAll("p");
 
 ps[0].textContent = siteContent["main-content"]["features-content"];
+
+ps[1].textContent = siteContent["main-content"]["about-content"]
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//--------------------BOTTOM CONTENT P's------------------------------
+
+ps[2].textContent = siteContent["main-content"]["services-content"];
+
+ps[3].textContent = siteContent["main-content"]["product-content"];
+
+ps[4].textContent = siteContent["main-content"]["vision-content"];
