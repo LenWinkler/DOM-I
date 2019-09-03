@@ -40,3 +40,49 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//----------------NAV------------------------------------
+
+let nav1 = document.querySelector("a:nth-child(1)");
+nav1.textContent = siteContent["nav"]["nav-item-1"];
+
+let nav2 = document.querySelector("a:nth-child(2)");
+nav2.textContent = siteContent["nav"]["nav-item-2"];
+
+let nav3 = document.querySelector("a:nth-child(3)");
+nav3.textContent = siteContent["nav"]["nav-item-3"];
+
+let nav4 = document.querySelector("a:nth-child(4)");
+nav4.textContent = siteContent["nav"]["nav-item-4"];
+
+let nav5 = document.querySelector("a:nth-child(5)");
+nav5.textContent = siteContent["nav"]["nav-item-5"];
+
+let nav6 = document.querySelector("a:nth-child(6)");
+nav6.textContent = siteContent["nav"]["nav-item-6"];
+
+//-----------------CTA------------------------------------
+
+let ctaText = document.querySelector("h1");
+
+ctaText.innerHTML = "Dom <br> Is <br> Awesome";
+
+let ctaButton = document.querySelector("button");
+
+ctaButton.innerText = siteContent["cta"]["button"];
+
+let ctaImg = document.getElementById("cta-img");
+
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//--------------------TOP CONTENT------------------------------
+
+// let firstTopContent = document.getElementById("top-content").firstChild;
+
+// let firstTopContentH4 = firstTopContent.firstChild;
+
+let firstTopContent = document.querySelector("top-content:nth-child(1) h4");
+
+firstTopContent.innerHTML = "Features";
+
+// var slectedChild = $("ul li:nth-child(4)");
