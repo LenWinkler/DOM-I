@@ -75,14 +75,28 @@ let ctaImg = document.getElementById("cta-img");
 
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-//--------------------TOP CONTENT------------------------------
+//--------------------TOP CONTENT H4's-----------------------
 
-// let firstTopContent = document.getElementById("top-content").firstChild;
+let headers = document.querySelectorAll("h4");
 
-// let firstTopContentH4 = firstTopContent.firstChild;
+headers[0].textContent = siteContent["main-content"]["features-h4"];
 
-let firstTopContent = document.querySelector("top-content:nth-child(1) h4");
+headers[1].textContent = siteContent["main-content"]["about-h4"];
 
-firstTopContent.innerHTML = "Features";
+//-------------------BOTTOM CONTENT H4's----------------------
 
-// var slectedChild = $("ul li:nth-child(4)");
+headers[2].textContent = siteContent["main-content"]["services-h4"];
+
+headers[3].textContent = siteContent["main-content"]["product-h4"];
+
+headers[4].textContent = siteContent["main-content"]["vision-h4"];
+
+//--------------------CONTACT H4------------------------------
+
+headers[5].textContent = siteContent["contact"]["contact-h4"];
+
+//-------------------TOP CONTENT P's--------------------------
+
+let ps = document.querySelectorAll("p");
+
+ps[0].textContent = siteContent["main-content"]["features-content"];
